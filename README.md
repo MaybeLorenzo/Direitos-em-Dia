@@ -1,3 +1,0 @@
-# Direitos em Dia
-
-O projeto Direitos em Dia é uma plataforma direcionada para todo e qualquer cidadão brasileiro que esteja tendo dificuldades em compreender seus próprios direitos ou sequer tem noção da existência deles. A plataforma irá contar com guias para a compreensão dos direitos mais comuns do dia a dia da população brasileira, como os direitos civis, políticos e sociais, além de conter uma lista de contatos das Defensorias Públicas e órgãos de assistência social.
