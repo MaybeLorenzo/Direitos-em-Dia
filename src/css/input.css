@@ -1,1 +1,129 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+/* Geralzão */
+@theme {
+    --color-azul-escuro: #1a365d;
+    --color-azul-medio: #2b6cb0;
+    --color-azul-hover: #3182ce;
+    --color-cinza-fundo: #f4f6f9;
+    --color-cor-texto: #333333;
+}
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+}
+
+body {
+    @apply bg-cinza-fundo text-cor-texto;
+    line-height: 1.6;
+}
+
+header {
+    @apply bg-azul-escuro text-white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    @apply text-white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    @apply text-azul-hover;
+}
+
+/* Seção de destaque */
+.hero {
+    @apply bg-azul-medio text-white text-center;
+    padding: 4rem 1rem;
+}
+
+.hero h1 {
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+/* Coisas da barra de pesquisa */
+.search-box {
+    margin-top: 1.5rem;
+}
+
+.search-box input {
+    @apply bg-white text-cor-texto;
+    width: 60%;
+    max-width: 400px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+.search-box button {
+    @apply bg-azul-hover text-white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.search-box button:hover {
+    @apply bg-azul-escuro;
+}
+
+/* Isso aqui é pros cards */
+.container-c-guias {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.container-c-guias h2 {
+    @apply text-azul-escuro text-center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    @apply bg-white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    @apply text-azul-medio;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.botao-link {
+    @apply text-azul-hover;
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao-link:hover {
+    text-decoration: underline;
+}

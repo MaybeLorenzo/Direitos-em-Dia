@@ -1,11 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Direitos em Dia</title>
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 </head>
 <body>
-    
+    <header>
+        <div class="logo">⚖️ Direitos em Dia</div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#direitos">Conheça seus Direitos</a>
+            <a href="#ajuda">Onde buscar Ajuda</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Conscientização e Acesso À cidadânia</h1>
+            <p>Aprenda sobre os seus direitos fundamentais de maneira clara e simples.</p>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="O que você está buscando? (ex: Trabalho, Consumidor)">
+                <button onclick="fazerBusca()">Pesquisar</button>
+            </div>
+        </section>
+    </main>
+    <section id="direitos" class="container_c_guias">
+        <div class="bg-azul-escuro text-white py-6 text-center font-bold">
+            <h2>Conheça Seus Direitos</h2>
+        </div>
+        <div class="grid-cards py-6">
+            <div class="card">
+                <h3>Direitos Trabalhistas</h3>
+                <p>Saiba sobre a carteira assinada, férias, rescisão e sobre o FGTS.</p>
+                <a href="guia-trabalhador.html" class="botao-link">Acessar guia</a>
+            </div>
+
+            <div class="card">
+                <h3>Direitos do Consumidor</h3>
+                <p>Aprenda sobre garantias de compras na internet, trocas de produto, prazos da garantia e sobre o Procon.</p>
+                <a href="guia-consumidor.html" class="botao-link">Acessar guia</a>
+            </div>
+
+            <div class="card">
+                <h3>Direito À Saúde</h3>
+                <p>Aprenda sobre o SUS, a como conseguir medicamentos gratuitos e também internações.</p>
+                <a href="guia-saude.html" class="botao-link">Acessar guia</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-azul-escuro text-white text-center py-4 mt-12">
+        <p>Direitos em Dia - Projeto universitário para a ODS 16.</p>
+    </footer>
 </body>
 </html>
